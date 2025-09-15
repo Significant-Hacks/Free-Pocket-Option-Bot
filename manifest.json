@@ -1,0 +1,61 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+	"manifest_version": 3,
+	"name": "Free Pocket Option Bot",
+	"version": "2.1.10",
+	"author": "Vitaly Belov",
+	"description": "2BOT - Free Pocket Option Bot",
+	"short_name" : "Pocket Option Bot",	
+	"homepage_url" : "https://2bot.top",
+	
+	"permissions": [
+		"storage"
+	],
+
+	"content_scripts": [
+	  {
+		"matches": ["https://pocketoption.com/*","https://platform58.po2.capital/*","https://p.finance/*","https://po.company/*","https://po1.capital/*", "https://pocket-link22.co/*"],
+		"js": ["document_end.js"],
+		"run_at": "document_end"
+	  },		
+	  {
+		"matches": ["https://pocketoption.com/*","https://platform58.po2.capital/*","https://p.finance/*","https://po.company/*","https://po1.capital/*", "https://pocket-link22.co/*"],
+		"js": ["document_start.js"],
+		"run_at": "document_start"
+
+		}
+	],
+
+	"web_accessible_resources" : [
+		{
+			"resources": ["web_accessible_resources.js","icon/*"],
+			"matches": [ "https://pocketoption.com/*","https://platform58.po2.capital/*","https://p.finance/*","https://po.company/*","https://po1.capital/*", "https://pocket-link22.co/*" ]	
+		}
+	],
+	
+	"externally_connectable" : {
+		"matches": ["https://pocketoption.com/*","https://platform58.po2.capital/*","https://p.finance/*","https://po.company/*","https://po1.capital/*", "https://pocket-link22.co/*"]
+	},
+	
+	"host_permissions" : [
+		"https://pocketoption.com/*","https://platform58.po2.capital/*","https://p.finance/*","https://po.company/*","https://po1.capital/*", "https://pocket-link22.co/*"
+	],
+	
+	"icons" : { 
+		"16": "./icon/icon_16.png",
+		"48": "./icon/icon_48.png",
+		"128": "./icon/icon_128.png" 
+	},
+	
+	"action" : {
+		
+		"default_icon": {
+		  "19": "./icon/icon_19.png",
+		  "38": "./icon/icon_38.png"
+		},
+		
+		"default_title": "PocketOption BOT"
+	}
+
+}

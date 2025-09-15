@@ -1,0 +1,1 @@
+(()=>{var e=document.createElement("script");e.src=chrome.runtime.getURL("web_accessible_resources.js"),e.onload=function(){this.parentNode.removeChild(this)},(document.head||document.documentElement).appendChild(e)})();
