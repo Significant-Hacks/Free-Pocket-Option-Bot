@@ -1,4 +1,4 @@
-# Project Plan: AI-Powered Trading Bot v3
+# Project Plan: AI-Powered Trading Bot v3 [THIS IS AN INCOPLETE PROJECT - YOU CAN CONTINUE THE DEVELOPMENT PLAN]
 
 ## 1. Executive Summary
 
